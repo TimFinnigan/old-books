@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Old Books</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Old Books</h1>
+    <input id="search" type="search" placeholder="Search title, year or author" aria-label="Search books">
+  </header>
+
+  <main>
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="empty" hidden>No books match your search.</p>
+  </main>
+
+  <footer>
+    Cover images from <a href="https://openlibrary.org" target="_blank" rel="noopener">Open Library</a>.
+  </footer>
+
+  <dialog id="details">
+    <button id="close" aria-label="Close">&times;</button>
+    <div id="details-body"></div>
+  </dialog>
+
+  <script src="books.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
